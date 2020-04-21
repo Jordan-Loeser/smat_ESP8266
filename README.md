@@ -18,6 +18,9 @@ AT+CIPSEND=4				# Length of Data
 
 # Raw Header, treat as string with escaped characters
 POST /test/postData HTTP/1.1\r\nHost: swms-data-service.herokuapp.com\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 12\r\n\r\ntestData=800\r\n
+
+# Another, Simpler Raw PUT Header
+PUT /test/firebaseWrite HTTP/1.1\r\nHost: swms-data-service.herokuapp.com\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 0\r\n
 ```
 Without escaped characters, the raw HTTP request looks like this:
 ```
