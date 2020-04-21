@@ -11,7 +11,7 @@ AT+CWMODE=3
 AT+CWJAP="SSID","password"
 
 # Connect to Heroku Server
-AT+CIPSTART: "TCP","swms-data-service.herokuapp.com/",80
+AT+CIPSTART: "TCP","swms-data-service.herokuapp.com",80
 
 # Send data to test Port
 AT+CIPSEND=4				# Length of Data
