@@ -27,8 +27,11 @@ GET /test HTTP/1.1\r\nHost: swms-data-service.herokuapp.com\r\n\r\n
 
 # POST request to /test
 POST /test HTTP/1.1\r\nHost: swms-data-service.herokuapp.com\r\nContent-Type: application/json\r\nContent-Length: 0\r\n\r\n
+
+# POST request to /logUsage
+POST /logUsage HTTP/1.1\r\nHost: swms-data-service.herokuapp.com\r\nContent-Type: application/x-www-form-urlencoded\r\nContent-Length: 28\r\n\r\nduration=100.2&flowRate=0.25\r\n\r\n
 ```
-Without escaped characters, the raw HTTP request looks like this:
+Without escaped characters, the raw HTTP request looks something like this:
 ```
 POST /test/postData HTTP/1.1
 Host: swms-data-service.herokuapp.com
